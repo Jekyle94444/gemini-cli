@@ -214,7 +214,7 @@ async function paginateConnection(
 function shouldProcess(issueData) {
   if (!issueData) return false;
 
-  if (issueData.state !== 'OPEN') return false;
+  if (issueData.state !== 'OPEN') return false; 
 
   const labels = issueData.labels.map((l) => l.toLowerCase());
   if (labels.includes('duplicate') || labels.includes('kind/duplicate')) {
